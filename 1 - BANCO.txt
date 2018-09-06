@@ -1,0 +1,22 @@
+CREATE DATABASE db_apsweb
+ENCODING 'WIN1252'
+TEMPLATE TEMPLATE0
+CONNECTION LIMIT 1
+
+
+CREATE TABLE "tb_cliente"(
+id_cliente	serial primary key,
+nome		VARCHAR(32) NOT NULL,
+cpf		VARCHAR(11) NOT NULL,
+endereco	VARCHAR(64) NOT NULL
+);
+
+INSERT INTO "tb_cliente" (nome,cpf,endereco) VALUES
+('João das Neves','12345678900','Dos Andradas 1998'),
+('Maria Silva','02384569815','Professor Marcelo Almeida 654'),
+('Josua Cunha','55632415859','Primeiro de Abril 10'),
+('Carlos CasaGrande','55632001236','Rua sem saida 20'),
+('Paola DeSá','89565231402','Americo Brasiliense 2013'),
+('Martha de Souza','66320125216','Bandeirantes 1250'),
+('Jesus Maria','03201569523','Rua dos Catetos 656'),
+('Adalberto Alberto','23631211020','Marcari Segundo 6332');
